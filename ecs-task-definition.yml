@@ -2,7 +2,7 @@ family: kiwibank-ecs-task
 networkMode: awsvpc
 requiresCompatibilities:
   - EC2
-cpu: 1 vcpu
+cpu: 1
 memory: 2 GB
 executionRoleArn: ecsExecutionRole  # Replace with your ECS execution role ARN
 
