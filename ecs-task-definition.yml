@@ -1,0 +1,12 @@
+family: kiwibank-ecs-task
+networkMode: awsvpc
+requiresCompatibilities:
+  - EC2
+cpu: 1 vcpu
+memory: 2 GB
+executionRoleArn: ecsExecutionRole  # Replace with your ECS execution role ARN
+
+containerDefinitions:
+  - name: kiwibank-container
+    image: kiwibank_test_project
+    essential: true
